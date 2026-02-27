@@ -48,3 +48,7 @@ go run main.go --endpoint http://127.0.0.1:8181 --api-key YOUR_TAUTULLI_API_KEY 
 1. Within Yamtrack, navigate to Settings > Import Data (`/settings/import`)
 1. Upload the generated CSV file(s).
 1. That's it!
+
+This script has been verified using:
+- [Tautulli v2.16.1](https://github.com/Tautulli/Tautulli/releases/tag/v2.16.1)
+- [Yamtrack v0.25.0](https://github.com/FuzzyGrim/Yamtrack/releases/tag/v0.25.0)
