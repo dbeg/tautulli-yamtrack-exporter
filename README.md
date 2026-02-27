@@ -11,6 +11,8 @@ Yamtrack is a self-hosted media tracker that [supports importing data via CSV in
 3.  **Formatting** timestamps to ISO-8601 strings compatible with Yamtrack's database schema.
 4.  **Categorizing** exports into specific movie, episode, and global history files.
 
+Note that Yamtrack already has a native Plex integration that will import ongoing watch history. This tool is intended for a one-time export/import of historical data that was recorded prior to a Yamtrack instance being installed.
+
 ## Prerequisites
 
 * **Go**: Version 1.18 or higher (if compiling/running from source).
@@ -40,7 +42,7 @@ go run main.go --endpoint http://127.0.0.1:8181 --api-key YOUR_TAUTULLI_API_KEY 
 | `--dry-run` | Count records without downloading or writing files | `false` |
 | `--verbose` | Enable detailed debug logging and API URL output | `false` |
 
-### How to Import to Yamtrack
+### How to import to Yamtrack
 
 1. Run the exporter to generate CSV export/import files in the `./out/` directory.
 1. Within Yamtrack, navigate to Settings > Import Data (`/settings/import`)
